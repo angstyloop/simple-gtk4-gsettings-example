@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/org/gtk/example/" id="org.gtk.example">
+    <key name="enum0" type="u">
+      <range min="0" max="99"/>
+      <default>0</default>
+      <summary>enum0</summary>
+      <description>The unsigned integer value of the 0th dropdown widget.</description>
+    </key>
+    <key name="string0" type="s">
+      <default>'Monospace 12'</default>
+      <summary>string0</summary>
+      <description>The string value of the 0th text widget.</description>
+    </key>
+    <key name="uint0" type="u">
+      <default>0</default>
+      <summary>uint0</summary>
+      <description>The unsigned integer value of the 0th scale widget.</description>
+    </key>
+    <key name="bool0" type="b">
+      <default>true</default>
+      <summary>bool0</summary>
+      <description>The boolean value of the 0th checkbox.</description>
+    </key>
+  </schema>
+</schemalist>
