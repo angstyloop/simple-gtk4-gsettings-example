@@ -2,7 +2,7 @@
 
 struct _GtkExample
 {
-	GtkDialog parent;
+	GtkWindow parent;
 	GSettings *settings;
 	GtkDropDown *enum0;
 	GtkText *string0;
@@ -10,7 +10,7 @@ struct _GtkExample
 	GtkCheckButton *bool0;
 };
 
-G_DEFINE_TYPE( GtkExample, gtk_example, GTK_TYPE_DIALOG );
+G_DEFINE_TYPE( GtkExample, gtk_example, GTK_TYPE_WINDOW );
 
 static void
 gtk_example_dispose( GObject *gobject )

@@ -30,14 +30,6 @@ gtk_file_chooser_response( GtkFileChooserDialog *chooser,
 }
 
 static void
-gtk_example_response( GtkDialog *example,
-	gint response_id, gpointer user_data )
-{
-	printf( "response_id: %d", response_id );
-	gtk_window_destroy( GTK_WINDOW( example ) );
-}
-
-static void
 activate( GtkApplication *app, gpointer user_data )
 {
 	GtkWidget *window = gtk_application_window_new( app );
@@ -60,9 +52,6 @@ activate( GtkApplication *app, gpointer user_data )
 		"response", G_CALLBACK(gtk_file_chooser_response), e );
 
 	gtk_window_set_transient_for( GTK_WINDOW( e ), GTK_WINDOW( window ));
-
-	g_signal_connect( GTK_DIALOG( e ),
-		"response", G_CALLBACK( gtk_example_response ), window );
 
 	gtk_widget_show( window );
 
